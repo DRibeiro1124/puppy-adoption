@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Poiret+One|Shadows+Into+Light|Uncial+Antiqua');
+
 .App {
+  /* font-family: 'Uncial Antiqua', cursive; */
+  /* font-family: 'Shadows Into Light', cursive; */
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Comfortaa', cursive;
+  /* font-family: 'Poiret One', cursive; */
+   
   text-align: center;
 }
 
@@ -9,4 +17,20 @@ nav ul {
   list-style: none;
 }
 
+.header-intro {
+  font-size: 6em;
+  font-family: 'Shadows Into Light', cursive;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.intro-title {
+  border-bottom: 5px solid black;
+}
+
+.header-photo {
+  height: 12em;
+  padding-bottom: 1em;
+}
 

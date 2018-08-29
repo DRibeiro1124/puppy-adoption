@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 import petData from "./Data/pet.json";
 
+import Header from "./Components/Header";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +23,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>Pets for Adoption</header>
+        <section>
+          <Header />
+        </section>
         {/*  */}
         <nav>
           <ul>
