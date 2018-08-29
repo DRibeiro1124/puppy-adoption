@@ -3,6 +3,7 @@ import "./App.css";
 import petData from "./Data/pet.json";
 
 import Header from "./Components/Header";
+import PetList from "./Components/PetList";
 
 class App extends Component {
   constructor(props) {
@@ -34,15 +35,10 @@ class App extends Component {
           </ul>
         </nav>
         {/*  */}
-        {this.state.pets.map((pet, i) => {
-          return (
-            <section className="pet-list" key={i}>
-              <header>{pet.name.$t}</header>
-              <img src={pet.media.photos.photo[3].$t} />
-              <button>Save for Later! arf!</button>
-            </section>
-          );
-        })}
+        <section>
+          <PetList animals={this.state.pets} />
+        </section>
+        
       </div>
     );
   }

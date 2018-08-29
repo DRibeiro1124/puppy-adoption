@@ -34,3 +34,9 @@ nav ul {
   padding-bottom: 1em;
 }
 
+.pet-list {
+  border: 3px solid blue;
+  display: flex;
+  
+}
+
