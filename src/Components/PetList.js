@@ -1,12 +1,31 @@
 import React, { Component } from 'react';
+import petData from "../Data/pet.json";
+
+
+
 
 
 
 class PetList extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            pets: []
+        }
+    }
+    componentDidMount() {
+        this.setState({
+            pets: petData.petfinder.pets.pet
+        });
+        console.log(petData);
+    }
+
+
     render() {
         return (
             <div className="pet-container">
-                {this.props.animals.map((pet, i) => {
+                {this.state.pets.map((pet, i) => {
                     return (
                         <section className="pet-list" key={i}>
                             <header className="pet-name">{pet.name.$t}</header>
