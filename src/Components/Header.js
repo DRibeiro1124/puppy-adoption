@@ -10,7 +10,7 @@ class Header extends Component {
                 <header className="header-intro">
                     <span className="intro-title">Pets for Adoption</span>
                 </header>
-                <section>
+                <section className="intro-photo">
                     <img src={photo1} alt="photo1" className="header-photo" />
                     <img src={photo2} alt="photo2" className="header-photo" />
                     <img src={photo3} alt="photo1" className="header-photo" />

@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 class PetList extends Component {
     render() {
         return (
-            <div>
+            <div className="pet-container">
                 {this.props.animals.map((pet, i) => {
                     return (
                         <section className="pet-list" key={i}>

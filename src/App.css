@@ -10,10 +10,12 @@
   text-align: center;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
+.nav-category {   
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+}
+
+.nav-category li {
   list-style: none;
 }
 
@@ -32,11 +34,53 @@ nav ul {
 .header-photo {
   height: 12em;
   padding-bottom: 1em;
+  justify-content: space-around;
+}
+
+.intro-photo {
+  display: flex;
+  justify-content: space-around;
 }
 
 .pet-list {
-  border: 3px solid blue;
   display: flex;
-  
+  flex-direction: column;  
+  justify-content: space-around;
+  margin: 10px;
 }
 
+.pet-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 2em;
+  margin: 15px;
+}
+
+.pet-image {
+  height: 15em;
+  width: 15em;
+  padding: 10px;
+  border: 1px solid darkslategrey;
+  background: dodgerblue;
+}
+
+.header-container {
+  /* border: 2px solid red; */
+  height: 450px;
+}
+
+.pet-button {
+  padding: 8px;
+  margin-bottom: 3em;
+  color: black;
+  background: gold;
+  font-size: 12px;
+}
+
+.pet-name {
+  /* font-family: 'Shadows Into Light', cursive; */
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+}

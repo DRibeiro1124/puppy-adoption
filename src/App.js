@@ -24,12 +24,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <section>
+        <section className="header-container">
           <Header />
         </section>
         {/*  */}
         <nav>
-          <ul>
+          <ul className="nav-category">
             <li>View all pets</li>
             <li>Potential adoptees</li>
           </ul>
