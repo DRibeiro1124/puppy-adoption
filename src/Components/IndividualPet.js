@@ -16,11 +16,13 @@ class IndividualPet extends Component {
     componentDidMount() {
         console.log(petData.petfinder.pets.pet[this.props.match.params.IndividualPet])
     }
+
     render() {
         return (
             <div className="individual-container">
                 <span className="individual-pet-name">{petData.petfinder.pets.pet[this.props.match.params.IndividualPet].name.$t}</span>
                 <span className="individual-pet-info">{petData.petfinder.pets.pet[this.props.match.params.IndividualPet].description.$t}</span>
+                <span className="individual-pet-info">{petData.petfinder.pets.pet[this.props.match.params.IndividualPet].media.photos.photo.$t}</span>
             </div>
         );
     }
