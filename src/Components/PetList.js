@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import petData from "../Data/pet.json";
+import {Link} from 'react-router-dom';
 
 
 
@@ -28,13 +29,16 @@ class PetList extends Component {
                 {this.state.pets.map((pet, i) => {
                     return (
                         <section className="pet-list" key={i}>
-                            <header className="pet-name">{pet.name.$t}</header>
-                            <img src={pet.media.photos.photo[3].$t} className="pet-image" />
-                            <button className="pet-button">Save for Later! arf!</button>
-                        </section>
+                        <Link to={`./${pet.name.$t}/${i}`}>
+                                <header className="pet-name">{pet.name.$t}</header>
+                                <img src={pet.media.photos.photo[3].$t} className="pet-image" />
+                        </Link>
+                                <button onClick={console.log()} className="pet-button">Save for Later! arf!</button>
+                            </section>
                     );
-                })}
-            </div>
+                })
+                }
+            </div >
         );
     }
 }

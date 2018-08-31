@@ -6,6 +6,7 @@ import petData from "./Data/pet.json";
 import Header from "./Components/Header";
 import PetList from "./Components/PetList";
 import HomePage from "./Components/HomePage";
+import IndividualPet from "./Components/IndividualPet";
 
 class App extends Component {
   // constructor(props) {
@@ -43,6 +44,7 @@ class App extends Component {
             <Switch>
               <Route path="/" exact component={HomePage} />
               <Route path="/:AnimalList" exact component={PetList} />
+              <Route path="/:AnimalList/:IndividualPet" exact component={IndividualPet} />
                {/* <PetList animals={this.state.pets}/> */}
             </Switch>
           </section>
